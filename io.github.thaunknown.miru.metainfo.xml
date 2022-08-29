@@ -22,6 +22,11 @@
             Bittorrent streaming software for cats. Stream anime torrents, real-time with no waiting for downloads.
         </p>
     </description>
+        <screenshots>
+        <screenshot type="default">
+            <image>https://raw.githubusercontent.com/kutzlect/io.github.thaunknown.miru/master/miru-screenshot-220830.jpg</image>
+        </screenshot>
+    </screenshots>
     <releases>
         <release version="3.1.6" date="2022-08-24"/>
     </releases>
