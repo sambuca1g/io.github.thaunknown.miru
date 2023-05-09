@@ -1,8 +1,8 @@
 app-id: io.github.thaunknown.miru
 base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
+base-version: '22.08'
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 command: miru-run
 separate-locales: false
@@ -11,7 +11,10 @@ finish-args:
   - --share=ipc
   - --share=network
   - --socket=x11
+  - --own-name=org.mpris.MediaPlayer2.chromium.instance3
   - --socket=pulseaudio
+  - --filesystem=xdg-videos:rw
+  - --filesystem=xdg-run/discord-ipc-0:ro
 modules:
   - name: miru
     buildsystem: simple
@@ -41,8 +44,8 @@ modules:
         path: io.github.thaunknown.miru.png
       - type: file
         dest-filename: miru.AppImage
-        url: https://github.com/ThaUnknown/miru/releases/download/v3.1.6/linux-Miru-3.1.6.AppImage
-        sha256: 7c857e0423f1e134cbfc90faf4c9c3673597ae16a13899498e35ff4384fee376
+        url: https://github.com/ThaUnknown/miru/releases/download/v3.9.10/linux-Miru-3.9.10.AppImage
+        sha512: 0e8243b87a2324ec3bd3f4752873d1327cfb5093cd6e71dd62f69a6944dc78086585e02fb736154d23443618bc54224f820dc559bb0bbaee0af5b63935dc8e55
         x-checker-data:
           type: json
           url: https://api.github.com/repos/thaunknown/miru/releases/latest
